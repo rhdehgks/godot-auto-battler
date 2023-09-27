@@ -1,0 +1,176 @@
+[gd_scene load_steps=4 format=3 uid="uid://cwjkroavy7rc8"]
+
+[ext_resource type="PackedScene" uid="uid://krb3b6qx5g03" path="res://board/board.tscn" id="1_rfsyv"]
+[ext_resource type="PackedScene" uid="uid://c1he2a7fokyrr" path="res://token/token.tscn" id="2_55bim"]
+[ext_resource type="Texture2D" uid="uid://ce0f26pwrfsoe" path="res://asset/sprite/ghost.png" id="3_w062c"]
+
+[node name="World" type="Node2D"]
+
+[node name="Board" parent="." instance=ExtResource("1_rfsyv")]
+position = Vector2(512, 160)
+
+[node name="Token" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(0, 128)
+
+[node name="Token2" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(64, 128)
+
+[node name="Token3" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(128, 128)
+
+[node name="Token7" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(384, 128)
+
+[node name="Token8" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(448, 128)
+
+[node name="Token23" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(0, 64)
+
+[node name="Token24" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(64, 64)
+
+[node name="Token25" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(128, 64)
+
+[node name="Token26" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(192, 64)
+
+[node name="Token27" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(256, 64)
+
+[node name="Token28" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(320, 64)
+attack_range = 2
+
+[node name="Token29" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(384, 64)
+attack_range = 2
+
+[node name="Token30" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(448, 64)
+attack_range = 2
+
+[node name="Token21" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(384, 0)
+attack_range = 2
+
+[node name="Token22" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(448, 0)
+attack_range = 2
+
+[node name="Token9" parent="Board" instance=ExtResource("2_55bim")]
+attack_range = 5
+id = 1
+
+[node name="Token10" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(0, 384)
+camp = 1
+texture = ExtResource("3_w062c")
+
+[node name="Token11" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(64, 384)
+camp = 1
+texture = ExtResource("3_w062c")
+
+[node name="Token12" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(128, 384)
+camp = 1
+texture = ExtResource("3_w062c")
+attack_range = 2
+
+[node name="Token13" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(192, 384)
+camp = 1
+texture = ExtResource("3_w062c")
+attack_range = 2
+
+[node name="Token14" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(0, 320)
+camp = 1
+texture = ExtResource("3_w062c")
+
+[node name="Token31" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(256, 384)
+camp = 1
+texture = ExtResource("3_w062c")
+attack_range = 2
+
+[node name="Token15" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(0, 448)
+camp = 1
+texture = ExtResource("3_w062c")
+attack_range = 3
+
+[node name="Token16" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(64, 448)
+camp = 1
+texture = ExtResource("3_w062c")
+attack_range = 3
+
+[node name="Token33" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(128, 448)
+camp = 1
+texture = ExtResource("3_w062c")
+attack_range = 3
+
+[node name="Token32" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(320, 384)
+camp = 1
+texture = ExtResource("3_w062c")
+
+[node name="Token34" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(448, 384)
+camp = 1
+texture = ExtResource("3_w062c")
+
+[node name="Token35" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(128, 320)
+camp = 1
+texture = ExtResource("3_w062c")
+
+[node name="Token36" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(192, 320)
+camp = 1
+texture = ExtResource("3_w062c")
+
+[node name="Token37" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(256, 320)
+camp = 1
+texture = ExtResource("3_w062c")
+
+[node name="Token38" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(320, 320)
+camp = 1
+texture = ExtResource("3_w062c")
+
+[node name="Token18" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(320, 448)
+camp = 1
+texture = ExtResource("3_w062c")
+attack_range = 5
+
+[node name="Token20" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(448, 448)
+camp = 1
+texture = ExtResource("3_w062c")
+attack_range = 5
+id = 2
+debug = true
+
+[node name="Button" type="Button" parent="."]
+offset_left = 1184.0
+offset_top = 256.0
+offset_right = 1376.0
+offset_bottom = 352.0
+text = "PRINT"
+
+[node name="DebugButton" type="Button" parent="."]
+offset_left = 1184.0
+offset_top = 448.0
+offset_right = 1376.0
+offset_bottom = 544.0
+text = "Debug"
+
+[connection signal="pressed" from="Button" to="Board" method="_on_button_pressed"]
+[connection signal="pressed" from="DebugButton" to="Board" method="_on_debug_button_pressed"]

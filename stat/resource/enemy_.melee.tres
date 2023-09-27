@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="Stat" load_steps=2 format=3 uid="uid://bh0jb0gi5btv6"]
+
+[ext_resource type="Script" path="res://stat/stat.gd" id="1_1sm8k"]
+
+[resource]
+script = ExtResource("1_1sm8k")
+camp = 1
+attack_range = 1
+move_speed = 200
+attack_speed = 200
+health = 800
+max_health = 800
+mana = 0
+max_mana = 20
+physical_damage = 20
+magic_damage = 20
+armor = 10
+magic_resistance = 10
+armor_penetration = 5
+magic_penetration = 5
+physical_vamp = 10
+magic_vamp = 10
+critical_strike_chance = 30

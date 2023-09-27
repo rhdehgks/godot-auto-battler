@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="Stat" load_steps=2 format=3 uid="uid://ohlmyurr5pde"]
+
+[ext_resource type="Script" path="res://stat/stat.gd" id="1_nw2qr"]
+
+[resource]
+script = ExtResource("1_nw2qr")
+camp = 0
+attack_range = 3
+move_speed = 200
+attack_speed = 300
+health = 400
+max_health = 400
+mana = 0
+max_mana = 30
+physical_damage = 30
+magic_damage = 20
+armor = 10
+magic_resistance = 10
+armor_penetration = 5
+magic_penetration = 5
+physical_vamp = 10
+magic_vamp = 10
+critical_strike_chance = 30

@@ -1,0 +1,61 @@
+[gd_scene load_steps=11 format=3 uid="uid://c1he2a7fokyrr"]
+
+[ext_resource type="Script" path="res://token/token.gd" id="1_5mpjt"]
+[ext_resource type="Script" path="res://fsm/fsm.gd" id="2_1vdo7"]
+[ext_resource type="Texture2D" uid="uid://bd8hxlim4i4np" path="res://asset/sprite/astroneer.png" id="2_ltbhf"]
+[ext_resource type="Script" path="res://fsm/state/idle_state.gd" id="4_oyyln"]
+[ext_resource type="Script" path="res://fsm/state/move_state.gd" id="5_rhs8y"]
+[ext_resource type="Script" path="res://fsm/state/attack_state.gd" id="6_c1530"]
+[ext_resource type="Script" path="res://fsm/state/die_state.gd" id="7_hk420"]
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_beelh"]
+
+[sub_resource type="Animation" id="Animation_m31hr"]
+resource_name = "test"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_m7ibj"]
+_data = {
+"test": SubResource("Animation_m31hr")
+}
+
+[node name="Token" type="Node2D"]
+script = ExtResource("1_5mpjt")
+texture = ExtResource("2_ltbhf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_ltbhf")
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource("AnimationNodeStateMachine_beelh")
+anim_player = NodePath("../AnimationPlayer")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_m7ibj")
+}
+
+[node name="FSM" type="Node2D" parent="."]
+script = ExtResource("2_1vdo7")
+
+[node name="Idle" type="Node2D" parent="FSM"]
+script = ExtResource("4_oyyln")
+
+[node name="Move" type="Node2D" parent="FSM"]
+script = ExtResource("5_rhs8y")
+
+[node name="Attack" type="Node2D" parent="FSM"]
+script = ExtResource("6_c1530")
+
+[node name="Die" type="Node2D" parent="FSM"]
+script = ExtResource("7_hk420")
+
+[node name="HealthLabel" type="Label" parent="."]
+offset_left = -20.0
+offset_top = -36.0
+offset_right = 20.0
+offset_bottom = 34.0
+theme_override_colors/font_color = Color(0.843137, 0, 0.909804, 1)
+theme_override_font_sizes/font_size = 48
+text = "5"
+horizontal_alignment = 1
+vertical_alignment = 1

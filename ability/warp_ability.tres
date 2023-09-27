@@ -1,0 +1,6 @@
+[gd_resource type="Resource" script_class="WarpAbility" load_steps=2 format=3 uid="uid://d145up51xr4e"]
+
+[ext_resource type="Script" path="res://ability/warp_ability.gd" id="1_d200j"]
+
+[resource]
+script = ExtResource("1_d200j")

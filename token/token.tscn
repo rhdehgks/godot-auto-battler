@@ -1,0 +1,88 @@
+[gd_scene load_steps=13 format=3 uid="uid://c1he2a7fokyrr"]
+
+[ext_resource type="Texture2D" uid="uid://cep1e60uhete2" path="res://asset/sprite/ogre_new.png" id="1_8p37k"]
+[ext_resource type="Script" path="res://token/token.gd" id="1_blqkc"]
+[ext_resource type="Script" path="res://fsm/fsm.gd" id="2_46xyq"]
+[ext_resource type="Script" path="res://fsm/state/idle_state.gd" id="3_hos72"]
+[ext_resource type="Script" path="res://fsm/state/move_state.gd" id="4_jl6ev"]
+[ext_resource type="Script" path="res://fsm/state/attack_state.gd" id="5_wv4h0"]
+[ext_resource type="Script" path="res://fsm/state/die_state.gd" id="6_jyre6"]
+[ext_resource type="Script" path="res://fsm/state/effect_state.gd" id="7_ste1u"]
+[ext_resource type="FontFile" uid="uid://dqf526b4lfgoo" path="res://asset/Minecraft.ttf" id="9_n0pc2"]
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_beelh"]
+
+[sub_resource type="Animation" id="Animation_m31hr"]
+resource_name = "test"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_m7ibj"]
+_data = {
+"test": SubResource("Animation_m31hr")
+}
+
+[node name="Token" type="Node2D"]
+script = ExtResource("1_blqkc")
+tag = null
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 1
+texture = ExtResource("1_8p37k")
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource("AnimationNodeStateMachine_beelh")
+anim_player = NodePath("../AnimationPlayer")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_m7ibj")
+}
+
+[node name="FSM" type="Node2D" parent="."]
+script = ExtResource("2_46xyq")
+
+[node name="Idle" type="Node2D" parent="FSM"]
+script = ExtResource("3_hos72")
+
+[node name="Move" type="Node2D" parent="FSM"]
+script = ExtResource("4_jl6ev")
+
+[node name="Attack" type="Node2D" parent="FSM"]
+script = ExtResource("5_wv4h0")
+
+[node name="Interrupted" type="Node2D" parent="FSM"]
+script = ExtResource("7_ste1u")
+
+[node name="Die" type="Node2D" parent="FSM"]
+script = ExtResource("6_jyre6")
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+modulate = Color(0.996078, 0, 0, 1)
+offset_left = -24.0
+offset_top = 16.0
+offset_right = 24.0
+offset_bottom = 21.0
+max_value = 15.0
+step = 1.0
+value = 15.0
+show_percentage = false
+
+[node name="ManaBar" type="ProgressBar" parent="."]
+modulate = Color(0, 0, 0.933333, 1)
+offset_left = -24.0
+offset_top = 23.0
+offset_right = 24.0
+offset_bottom = 28.0
+max_value = 15.0
+step = 1.0
+value = 15.0
+show_percentage = false
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+z_index = 1
+offset_left = -32.0
+offset_top = -24.0
+offset_right = 32.0
+offset_bottom = -8.0
+theme_override_fonts/normal_font = ExtResource("9_n0pc2")
+theme_override_font_sizes/normal_font_size = 16
+bbcode_enabled = true

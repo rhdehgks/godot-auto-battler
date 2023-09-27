@@ -1,0 +1,191 @@
+[gd_scene load_steps=12 format=3 uid="uid://cwjkroavy7rc8"]
+
+[ext_resource type="PackedScene" uid="uid://krb3b6qx5g03" path="res://board/board.tscn" id="1_rfsyv"]
+[ext_resource type="PackedScene" uid="uid://c1he2a7fokyrr" path="res://token/token.tscn" id="2_u84iy"]
+[ext_resource type="Texture2D" uid="uid://c4v12x03wqu6u" path="res://asset/sprite/ironheart_preserver.png" id="3_75dcs"]
+[ext_resource type="Texture2D" uid="uid://cep1e60uhete2" path="res://asset/sprite/ogre_new.png" id="3_rbrhs"]
+[ext_resource type="Resource" uid="uid://cn7ibxxy28bcy" path="res://stat/resource/enemy_range.tres" id="3_uukr0"]
+[ext_resource type="Resource" uid="uid://3vbqkqvwptd" path="res://ability/ability.tres" id="4_0n5qb"]
+[ext_resource type="Texture2D" uid="uid://cwfj03isxw5he" path="res://asset/sprite/orb_guardian_new.png" id="4_26gqa"]
+[ext_resource type="Resource" uid="uid://bh0jb0gi5btv6" path="res://stat/resource/enemy_.melee.tres" id="5_lg2uo"]
+[ext_resource type="Texture2D" uid="uid://cwxow72as6koc" path="res://asset/sprite/merfolk_aquamancer_water_old.png" id="5_wnq7k"]
+[ext_resource type="Resource" uid="uid://ohlmyurr5pde" path="res://stat/resource/ally_range.tres" id="7_a7g44"]
+[ext_resource type="Resource" uid="uid://byro8swcrynp" path="res://stat/resource/ally_melee.tres" id="9_if4j1"]
+
+[node name="World" type="Node2D"]
+
+[node name="Board" parent="." instance=ExtResource("1_rfsyv")]
+z_as_relative = false
+position = Vector2(320, 96)
+
+[node name="Token" parent="Board" instance=ExtResource("2_u84iy")]
+stat = ExtResource("3_uukr0")
+ability = ExtResource("4_0n5qb")
+texture = ExtResource("3_75dcs")
+debug = true
+
+[node name="Token3" parent="Board" instance=ExtResource("2_u84iy")]
+position = Vector2(64, 0)
+stat = ExtResource("3_uukr0")
+ability = ExtResource("4_0n5qb")
+texture = ExtResource("3_75dcs")
+debug = true
+
+[node name="Token4" parent="Board" instance=ExtResource("2_u84iy")]
+position = Vector2(128, 0)
+stat = ExtResource("3_uukr0")
+ability = ExtResource("4_0n5qb")
+texture = ExtResource("3_75dcs")
+debug = true
+
+[node name="Token7" parent="Board" instance=ExtResource("2_u84iy")]
+position = Vector2(64, 128)
+stat = ExtResource("5_lg2uo")
+ability = ExtResource("4_0n5qb")
+texture = ExtResource("3_rbrhs")
+debug = true
+
+[node name="Token8" parent="Board" instance=ExtResource("2_u84iy")]
+position = Vector2(128, 128)
+stat = ExtResource("5_lg2uo")
+ability = ExtResource("4_0n5qb")
+texture = ExtResource("3_rbrhs")
+debug = true
+
+[node name="Token9" parent="Board" instance=ExtResource("2_u84iy")]
+position = Vector2(192, 128)
+stat = ExtResource("5_lg2uo")
+ability = ExtResource("4_0n5qb")
+texture = ExtResource("3_rbrhs")
+debug = true
+
+[node name="Token13" parent="Board" instance=ExtResource("2_u84iy")]
+position = Vector2(256, 128)
+stat = ExtResource("5_lg2uo")
+ability = ExtResource("4_0n5qb")
+texture = ExtResource("3_rbrhs")
+debug = true
+
+[node name="Token14" parent="Board" instance=ExtResource("2_u84iy")]
+position = Vector2(320, 128)
+stat = ExtResource("5_lg2uo")
+ability = ExtResource("4_0n5qb")
+texture = ExtResource("3_rbrhs")
+debug = true
+
+[node name="Token15" parent="Board" instance=ExtResource("2_u84iy")]
+position = Vector2(384, 128)
+stat = ExtResource("5_lg2uo")
+ability = ExtResource("4_0n5qb")
+texture = ExtResource("3_rbrhs")
+debug = true
+
+[node name="Token19" parent="Board" instance=ExtResource("2_u84iy")]
+position = Vector2(320, 64)
+stat = ExtResource("5_lg2uo")
+ability = ExtResource("4_0n5qb")
+texture = ExtResource("3_rbrhs")
+debug = true
+
+[node name="Token20" parent="Board" instance=ExtResource("2_u84iy")]
+position = Vector2(384, 64)
+stat = ExtResource("5_lg2uo")
+ability = ExtResource("4_0n5qb")
+texture = ExtResource("3_rbrhs")
+debug = true
+
+[node name="Token21" parent="Board" instance=ExtResource("2_u84iy")]
+position = Vector2(448, 64)
+stat = ExtResource("5_lg2uo")
+ability = ExtResource("4_0n5qb")
+texture = ExtResource("3_rbrhs")
+debug = true
+
+[node name="Token2" parent="Board" instance=ExtResource("2_u84iy")]
+position = Vector2(448, 448)
+stat = ExtResource("7_a7g44")
+ability = ExtResource("4_0n5qb")
+texture = ExtResource("5_wnq7k")
+
+[node name="Token5" parent="Board" instance=ExtResource("2_u84iy")]
+position = Vector2(384, 448)
+stat = ExtResource("7_a7g44")
+ability = ExtResource("4_0n5qb")
+texture = ExtResource("5_wnq7k")
+
+[node name="Token6" parent="Board" instance=ExtResource("2_u84iy")]
+position = Vector2(320, 448)
+stat = ExtResource("7_a7g44")
+ability = ExtResource("4_0n5qb")
+texture = ExtResource("5_wnq7k")
+
+[node name="Token10" parent="Board" instance=ExtResource("2_u84iy")]
+position = Vector2(192, 320)
+stat = ExtResource("9_if4j1")
+ability = ExtResource("4_0n5qb")
+texture = ExtResource("4_26gqa")
+
+[node name="Token11" parent="Board" instance=ExtResource("2_u84iy")]
+position = Vector2(128, 320)
+stat = ExtResource("9_if4j1")
+ability = ExtResource("4_0n5qb")
+texture = ExtResource("4_26gqa")
+
+[node name="Token12" parent="Board" instance=ExtResource("2_u84iy")]
+position = Vector2(64, 320)
+stat = ExtResource("9_if4j1")
+ability = ExtResource("4_0n5qb")
+texture = ExtResource("4_26gqa")
+
+[node name="Token22" parent="Board" instance=ExtResource("2_u84iy")]
+position = Vector2(128, 384)
+stat = ExtResource("9_if4j1")
+ability = ExtResource("4_0n5qb")
+texture = ExtResource("4_26gqa")
+
+[node name="Token23" parent="Board" instance=ExtResource("2_u84iy")]
+position = Vector2(64, 384)
+stat = ExtResource("9_if4j1")
+ability = ExtResource("4_0n5qb")
+texture = ExtResource("4_26gqa")
+
+[node name="Token24" parent="Board" instance=ExtResource("2_u84iy")]
+position = Vector2(0, 384)
+stat = ExtResource("9_if4j1")
+ability = ExtResource("4_0n5qb")
+texture = ExtResource("4_26gqa")
+
+[node name="Token16" parent="Board" instance=ExtResource("2_u84iy")]
+position = Vector2(384, 320)
+stat = ExtResource("9_if4j1")
+ability = ExtResource("4_0n5qb")
+texture = ExtResource("4_26gqa")
+
+[node name="Token17" parent="Board" instance=ExtResource("2_u84iy")]
+position = Vector2(320, 320)
+stat = ExtResource("9_if4j1")
+ability = ExtResource("4_0n5qb")
+texture = ExtResource("4_26gqa")
+
+[node name="Token18" parent="Board" instance=ExtResource("2_u84iy")]
+position = Vector2(256, 320)
+stat = ExtResource("9_if4j1")
+ability = ExtResource("4_0n5qb")
+texture = ExtResource("4_26gqa")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 864.0
+offset_top = 160.0
+offset_right = 1056.0
+offset_bottom = 256.0
+text = "PRINT"
+
+[node name="DebugButton" type="Button" parent="."]
+offset_left = 864.0
+offset_top = 352.0
+offset_right = 1056.0
+offset_bottom = 448.0
+text = "DEBUG"
+
+[connection signal="pressed" from="Button" to="Board" method="_on_button_pressed"]
+[connection signal="pressed" from="DebugButton" to="Board" method="_on_debug_button_pressed"]

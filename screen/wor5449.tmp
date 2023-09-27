@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwjkroavy7rc8"]
+
+[ext_resource type="PackedScene" uid="uid://krb3b6qx5g03" path="res://board/board.tscn" id="1_rfsyv"]
+[ext_resource type="PackedScene" uid="uid://c1he2a7fokyrr" path="res://token/token.tscn" id="2_55bim"]
+
+[node name="World" type="Node2D"]
+
+[node name="Board" parent="." instance=ExtResource("1_rfsyv")]
+position = Vector2(512, 160)
+
+[node name="Token" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(64, 0)
+
+[node name="Token2" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(64, 64)
+
+[node name="Token3" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(64, 128)
+
+[node name="Token4" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(64, 192)
+
+[node name="Token5" parent="Board" instance=ExtResource("2_55bim")]
+position = Vector2(64, 256)

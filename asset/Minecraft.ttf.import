@@ -1,0 +1,38 @@
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://dqf526b4lfgoo"
+path="res://.godot/imported/Minecraft.ttf-c3c6d1c889fa729e4db93cf676849304.fontdata"
+
+[deps]
+
+source_file="res://asset/Minecraft.ttf"
+dest_files=["res://.godot/imported/Minecraft.ttf-c3c6d1c889fa729e4db93cf676849304.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=0
+generate_mipmaps=false
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=true
+force_autohinter=false
+hinting=0
+subpixel_positioning=0
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=false
+preload=[{
+"chars": [],
+"glyphs": [],
+"name": "새 설정",
+"size": Vector2i(16, 0)
+}]
+language_support={}
+script_support={}
+opentype_features={}

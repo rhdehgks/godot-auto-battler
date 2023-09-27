@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://krb3b6qx5g03"]
+
+[ext_resource type="Script" path="res://board/board.gd" id="1_ob04q"]
+[ext_resource type="Texture2D" uid="uid://dwaoxnvse0whu" path="res://asset/sprite/board.png" id="2_7u0hx"]
+
+[node name="Board" type="Node2D"]
+script = ExtResource("1_ob04q")
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(224, 224)
+texture = ExtResource("2_7u0hx")
+metadata/_edit_lock_ = true
