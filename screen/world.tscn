@@ -29,7 +29,6 @@ stat = ExtResource("3_uukr0")
 ability = ExtResource("4_0n5qb")
 texture = ExtResource("3_75dcs")
 debug = true
-tag = ""
 
 [node name="Token3" parent="Board" instance=ExtResource("2_u84iy")]
 position = Vector2(64, 0)
@@ -37,7 +36,6 @@ stat = ExtResource("3_uukr0")
 ability = ExtResource("4_0n5qb")
 texture = ExtResource("3_75dcs")
 debug = true
-tag = ""
 
 [node name="Token4" parent="Board" instance=ExtResource("2_u84iy")]
 position = Vector2(128, 0)
@@ -45,7 +43,6 @@ stat = ExtResource("3_uukr0")
 ability = ExtResource("4_0n5qb")
 texture = ExtResource("3_75dcs")
 debug = true
-tag = ""
 
 [node name="Token30" parent="Board" instance=ExtResource("2_u84iy")]
 position = Vector2(448, 0)
@@ -53,7 +50,6 @@ stat = ExtResource("3_uukr0")
 ability = ExtResource("4_0n5qb")
 texture = ExtResource("3_75dcs")
 debug = true
-tag = ""
 
 [node name="Token8" parent="Board" instance=ExtResource("2_u84iy")]
 position = Vector2(384, 64)
@@ -61,7 +57,6 @@ stat = ExtResource("5_lg2uo")
 ability = ExtResource("4_0n5qb")
 texture = ExtResource("3_rbrhs")
 debug = true
-tag = ""
 
 [node name="Token9" parent="Board" instance=ExtResource("2_u84iy")]
 position = Vector2(448, 64)
@@ -69,7 +64,6 @@ stat = ExtResource("5_lg2uo")
 ability = ExtResource("4_0n5qb")
 texture = ExtResource("3_rbrhs")
 debug = true
-tag = ""
 
 [node name="Token13" parent="Board" instance=ExtResource("2_u84iy")]
 position = Vector2(256, 128)
@@ -77,7 +71,6 @@ stat = ExtResource("5_lg2uo")
 ability = ExtResource("4_0n5qb")
 texture = ExtResource("3_rbrhs")
 debug = true
-tag = ""
 
 [node name="Token14" parent="Board" instance=ExtResource("2_u84iy")]
 position = Vector2(320, 128)
@@ -85,7 +78,6 @@ stat = ExtResource("5_lg2uo")
 ability = ExtResource("4_0n5qb")
 texture = ExtResource("3_rbrhs")
 debug = true
-tag = ""
 
 [node name="Token15" parent="Board" instance=ExtResource("2_u84iy")]
 position = Vector2(384, 128)
@@ -93,7 +85,6 @@ stat = ExtResource("5_lg2uo")
 ability = ExtResource("4_0n5qb")
 texture = ExtResource("3_rbrhs")
 debug = true
-tag = ""
 
 [node name="Token19" parent="Board" instance=ExtResource("2_u84iy")]
 position = Vector2(64, 128)
@@ -132,49 +123,42 @@ position = Vector2(448, 448)
 stat = ExtResource("7_a7g44")
 ability = ExtResource("4_0n5qb")
 texture = ExtResource("5_wnq7k")
-tag = ""
 
 [node name="Token5" parent="Board" instance=ExtResource("2_u84iy")]
 position = Vector2(384, 448)
 stat = ExtResource("7_a7g44")
 ability = ExtResource("4_0n5qb")
 texture = ExtResource("5_wnq7k")
-tag = ""
 
 [node name="Token27" parent="Board" instance=ExtResource("2_u84iy")]
 position = Vector2(256, 448)
 stat = ExtResource("7_a7g44")
 ability = ExtResource("4_0n5qb")
 texture = ExtResource("5_wnq7k")
-tag = ""
 
 [node name="Token6" parent="Board" instance=ExtResource("2_u84iy")]
 position = Vector2(320, 448)
 stat = ExtResource("7_a7g44")
 ability = ExtResource("4_0n5qb")
 texture = ExtResource("5_wnq7k")
-tag = ""
 
 [node name="Token10" parent="Board" instance=ExtResource("2_u84iy")]
 position = Vector2(192, 320)
 stat = ExtResource("9_if4j1")
 ability = ExtResource("4_0n5qb")
 texture = ExtResource("4_26gqa")
-tag = ""
 
 [node name="Token11" parent="Board" instance=ExtResource("2_u84iy")]
 position = Vector2(128, 320)
 stat = ExtResource("9_if4j1")
 ability = ExtResource("4_0n5qb")
 texture = ExtResource("4_26gqa")
-tag = ""
 
 [node name="Token12" parent="Board" instance=ExtResource("2_u84iy")]
 position = Vector2(64, 320)
 stat = ExtResource("9_if4j1")
 ability = ExtResource("4_0n5qb")
 texture = ExtResource("4_26gqa")
-tag = ""
 
 [node name="Token22" parent="Board" instance=ExtResource("2_u84iy")]
 position = Vector2(128, 384)
@@ -209,35 +193,30 @@ position = Vector2(384, 320)
 stat = ExtResource("9_if4j1")
 ability = ExtResource("4_0n5qb")
 texture = ExtResource("4_26gqa")
-tag = ""
 
 [node name="Token17" parent="Board" instance=ExtResource("2_u84iy")]
 position = Vector2(320, 320)
 stat = ExtResource("9_if4j1")
 ability = ExtResource("4_0n5qb")
 texture = ExtResource("4_26gqa")
-tag = ""
 
 [node name="Token25" parent="Board" instance=ExtResource("2_u84iy")]
 position = Vector2(384, 256)
 stat = ExtResource("9_if4j1")
 ability = ExtResource("4_0n5qb")
 texture = ExtResource("4_26gqa")
-tag = ""
 
 [node name="Token28" parent="Board" instance=ExtResource("2_u84iy")]
 position = Vector2(320, 256)
 stat = ExtResource("9_if4j1")
 ability = ExtResource("4_0n5qb")
 texture = ExtResource("4_26gqa")
-tag = ""
 
 [node name="Token18" parent="Board" instance=ExtResource("2_u84iy")]
 position = Vector2(256, 320)
 stat = ExtResource("9_if4j1")
 ability = ExtResource("4_0n5qb")
 texture = ExtResource("4_26gqa")
-tag = ""
 
 [node name="StartButton" type="Button" parent="."]
 offset_left = 864.0
@@ -246,11 +225,13 @@ offset_right = 1056.0
 offset_bottom = 256.0
 text = "START"
 
-[node name="DebugButton" type="Button" parent="."]
+[node name="ResetButton" type="Button" parent="."]
 offset_left = 864.0
 offset_top = 352.0
 offset_right = 1056.0
 offset_bottom = 448.0
-text = "DEBUG"
+text = "RESET
+"
 
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="ResetButton" to="." method="_on_reset_button_pressed"]
